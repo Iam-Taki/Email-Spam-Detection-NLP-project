@@ -1,7 +1,6 @@
 # Email-Spam-Detection-NLP-project
 
 
-# Spam Detection Using NLTK and FFNN 
 
 We are using a email classfication dataset with 3002 Column and 5112 rows of data.
 We are using Natrual Language Toolkit and FFNN to train a model to detect is the Email is SPAM or not. 
