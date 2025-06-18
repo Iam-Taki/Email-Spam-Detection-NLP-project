@@ -250,6 +250,78 @@ main_trained = (model.predict(Main_test) > 0.5).astype(int)
 
 ![Epoch](https://github.com/Iam-Taki/Email-Spam-Detection-NLP-project/blob/05d4ad5fa8d6c0db808aa44463a6010d8e8558d1/Screenshot%202025-06-18%20125535.png)
 
+
+
+from sklearn.metrics import confusion_matrix, classification_report, f1_score
+import seaborn as sns
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+
+cm = confusion_matrix(main_predication_test, main_trained)
+print("Confusion Matrix:")
+print(cm)
+
+
+f1 = f1_score(main_predication_test, main_trained, average='binary', zero_division=0)
+print("\nF1 Score:", f1)
+
+
+print("\nClassification Report:")
+print(classification_report(main_predication_test, main_trained, digits=2, zero_division=0))
+
+
+plt.figure(figsize=(4, 3))
+sns.heatmap(cm,
+            annot=True, fmt='d', cmap='Blues',
+            xticklabels=['Pred 0', 'Pred 1'],
+            yticklabels=['True 0', 'True 1'])
+plt.ylabel('Actual')
+plt.xlabel('Predicted')
+plt.title('Confusion Matrix')
+plt.tight_layout()
+
+
+plt.savefig('confusion_matrix.png', dpi=120)
+plt.show()
+
+
 ![Confisuon Martrix, F1](https://github.com/Iam-Taki/Email-Spam-Detection-NLP-project/blob/67afbd7f388f38d17b7c0a49f9514e500c4c2964/Screenshot%202025-06-18%20125749.png)
+
+
+
+import matplotlib.pyplot as plt
+
+
+acc      = history.history['accuracy']
+val_acc  = history.history['val_accuracy']
+loss     = history.history['loss']
+val_loss = history.history['val_loss']
+epochs   = range(len(acc))          # 0 … N‑1
+
+
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 5))
+
+
+ax1.plot(epochs, acc,      label='Training Accuracy')
+ax1.plot(epochs, val_acc,  label='Validation Accuracy')
+ax1.set_title('Training and Validation Accuracy')
+ax1.set_xlabel('Epoch')
+ax1.set_ylabel('Accuracy')
+ax1.legend()
+
+
+ax2.plot(epochs, loss,     label='Training Loss')
+ax2.plot(epochs, val_loss, label='Validation Loss')
+ax2.set_title('Training and Validation Loss')
+ax2.set_xlabel('Epoch')
+ax2.set_ylabel('Loss')
+ax2.legend()
+
+plt.tight_layout()
+plt.show()
+
+
 
 ![Validation Map](https://github.com/Iam-Taki/Email-Spam-Detection-NLP-project/blob/17d9e8f274df2e0a49edfac6ddce68693f9f3fb2/Screenshot%202025-06-18%20125926.png)
