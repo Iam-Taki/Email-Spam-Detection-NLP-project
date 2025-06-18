@@ -155,7 +155,7 @@ plt.show()
 ![Epoch] Screenshot 2025-06-18 104804.png
 
 
-![Confisuon Martrix, F1]https://github.com/Iam-Taki/Email-Spam-Detection-NLP-project/blob/0eb1a8e0189a70e0f5df68e1fcdf9ab9d05f2ac6/Screenshot%202025-06-18%20104822.png
+![Confisuon Martrix, F1] (https://github.com/Iam-Taki/Email-Spam-Detection-NLP-project/blob/0eb1a8e0189a70e0f5df68e1fcdf9ab9d05f2ac6/Screenshot%202025-06-18%20104822.png)
 
 ![Validation Map]https://github.com/Iam-Taki/Email-Spam-Detection-NLP-project/blob/0eb1a8e0189a70e0f5df68e1fcdf9ab9d05f2ac6/Screenshot%202025-06-18%20104847.png
 
