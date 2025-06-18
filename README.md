@@ -152,7 +152,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-![Epoch]([Screenshot 2025-06-18 104804.png](https://github.com/Iam-Taki/Email-Spam-Detection-NLP-project/blob/8a081ee3801c5648c64c7ca26b980036c9737a22/Screenshot%202025-06-18%20104804.png)
+![Epoch](https://github.com/Iam-Taki/Email-Spam-Detection-NLP-project/blob/8a081ee3801c5648c64c7ca26b980036c9737a22/Screenshot%202025-06-18%20104804.png)
 
 
 ![image alt](https://github.com/Iam-Taki/Email-Spam-Detection-NLP-project/blob/0eb1a8e0189a70e0f5df68e1fcdf9ab9d05f2ac6/Screenshot%202025-06-18%20104822.png)
@@ -249,7 +249,7 @@ history = model.fit(Main_train, main_predication_train, epochs=10, batch_size=30
 main_trained = (model.predict(Main_test) > 0.5).astype(int)
 ```
 
-![Epoch]((https://github.com/Iam-Taki/Email-Spam-Detection-NLP-project/blob/05d4ad5fa8d6c0db808aa44463a6010d8e8558d1/Screenshot%202025-06-18%20125535.png)
+![Epoch](https://github.com/Iam-Taki/Email-Spam-Detection-NLP-project/blob/05d4ad5fa8d6c0db808aa44463a6010d8e8558d1/Screenshot%202025-06-18%20125535.png)
 
 ![Confisuon Martrix, F1](https://github.com/Iam-Taki/Email-Spam-Detection-NLP-project/blob/67afbd7f388f38d17b7c0a49f9514e500c4c2964/Screenshot%202025-06-18%20125749.png)
 
